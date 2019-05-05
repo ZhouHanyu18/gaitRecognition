@@ -11,13 +11,13 @@ from CNN import CNN
 
 FLAGS = tf.flags.FLAGS
 
-tf.app.flags.DEFINE_integer("layer_num", 3, "number of layer")
+tf.app.flags.DEFINE_integer("layer_num", 1, "number of layer")
 tf.app.flags.DEFINE_integer("units_num", 128, "number of hidden units")
 tf.app.flags.DEFINE_integer("epoch", 50, "epoch of training step")
 tf.app.flags.DEFINE_integer("batch_size", 128, "mini_batch_size")
 tf.app.flags.DEFINE_integer("W", 6, "use ten point to predict the value of 11th")
 tf.app.flags.DEFINE_integer("H", 50, "use ten point to predict the value of 11th")
-tf.app.flags.DEFINE_enum("model_state", "train", ["train", "predict"], "model state")
+tf.app.flags.DEFINE_enum("model_state", "predict", ["train", "predict"], "model state")
 tf.app.flags.DEFINE_float("lr", 0.01, "learning rate")
 
 
@@ -43,6 +43,7 @@ class RNN(object):
         with tf.variable_scope("train_op_layer"):
             cross_entropy = tf.nn.sparse_softmax_cross_entropy_with_logits(logits=self.pre, labels=self.y_)
             self.loss = tf.reduce_mean(cross_entropy)
+            # tf.summary.scalar(name="loss", tensor=self.loss)
             optimizer = tf.train.AdamOptimizer(learning_rate=FLAGS.lr)
             self.train_op = optimizer.minimize(self.loss, self.global_step)
 
@@ -50,12 +51,14 @@ class RNN(object):
         with tf.variable_scope("accuracy") as scope:
             correct = tf.nn.in_top_k(self.pre, self.y_, 1)
             accuracy = tf.reduce_mean(tf.cast(correct, tf.float32))
+            # tf.summary.scalar(name="accuracy", tensor=accuracy)
             self.acc = accuracy
 
     def build_net(self):
         self.build_rnn()
         self.build_train_op()
         self.evaluation()
+        # self.merged_summary = tf.summary.merge_all()
 
 
 def get_batches(X, y):
@@ -80,9 +83,12 @@ def get_file():
         line2 = f2.readlines()
         temp = []
         for num in range(len(line)):
+            if num < 50:
+                continue
             time, x, y, z = [float(i) for i in line[num].split()]
             time2, x2, y2, z2 = [float(i) for i in line2[num].split()]
             temp.append([x, y, z, x2, y2, z2])
+            # temp.append([x, y, z])
             num += 1
             if len(temp) == 50:
                 X.append(temp)
@@ -138,8 +144,7 @@ if __name__ == "__main__":
                 for xs, ys in get_batches(train_x, train_y):
                     feed_dict = {rnn_model.x: xs, rnn_model.y_: ys}
                     _, loss, step, train_acc = sess.run(
-                        [rnn_model.train_op, rnn_model.loss, rnn_model.global_step, rnn_model.acc],
-                        feed_dict=feed_dict)
+                        [rnn_model.train_op, rnn_model.loss, rnn_model.global_step, rnn_model.acc], feed_dict=feed_dict)
                     if step % 10 == 0:
                         feed_dict = {rnn_model.x: valid_x, rnn_model.y_: valid_y}
                         valid_acc = sess.run(rnn_model.acc, feed_dict=feed_dict)

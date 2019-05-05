@@ -21,7 +21,7 @@ class CNN(object):
         return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding="SAME")
 
     def max_pool_2x2(self, x, name):
-        return tf.nn.max_pool(x, ksize=[1, 3, 3, 1], strides=[1, 3, 3, 1], padding="SAME", name=name)
+        return tf.nn.max_pool(x, ksize=[1, 3, 1, 1], strides=[1, 3, 1, 1], padding="SAME", name=name)
 
     def losses(self, logits, labels):
         with tf.variable_scope("loss") as scope:
@@ -51,7 +51,7 @@ class CNN(object):
     def build_net(self):
         # 第一层卷积层
         with tf.variable_scope('conv1') as scope:
-            w_conv1 = tf.Variable(self.weight_variable([5, 5, 1,32], 1.0), name="weights", dtype=tf.float32)
+            w_conv1 = tf.Variable(self.weight_variable([5, 6, 1, 32], 1.0), name="weights", dtype=tf.float32)
             b_conv1 = tf.Variable(self.bias_variable([32]), name="blases", dtype=tf.float32)
             h_conv1 = tf.nn.relu(self.conv2d(self.x_holder, w_conv1) + b_conv1, name="conv1")
 
@@ -62,7 +62,7 @@ class CNN(object):
 
         # 第2层卷积层
         with tf.variable_scope('conv1') as scope:
-            w_conv2 = tf.Variable(self.weight_variable([5, 5, 32, 64], 1.0), name="weights", dtype=tf.float32)
+            w_conv2 = tf.Variable(self.weight_variable([5, 6, 32, 64], 1.0), name="weights", dtype=tf.float32)
             b_conv2 = tf.Variable(self.bias_variable([64]), name="blases", dtype=tf.float32)
             h_conv2 = tf.nn.relu(self.conv2d(norm1, w_conv2) + b_conv2, name="conv1")
 
@@ -71,10 +71,21 @@ class CNN(object):
             pool2 = self.max_pool_2x2(h_conv2, "pooling1")
             norm2 = tf.nn.lrn(pool2, depth_radius=4, bias=1.0, alpha=0.001 / 9.0, beta=0.75, name="norm1")
 
+        # 第3层卷积层
+        with tf.variable_scope('conv1') as scope:
+            w_conv3 = tf.Variable(self.weight_variable([5, 6, 64, 128], 1.0), name="weights", dtype=tf.float32)
+            b_conv3 = tf.Variable(self.bias_variable([128]), name="blases", dtype=tf.float32)
+            h_conv3 = tf.nn.relu(self.conv2d(norm2, w_conv3) + b_conv3, name="conv1")
+
+        # 第3层池化层
+        with tf.variable_scope('pooling1_lrn') as scope:
+            pool3 = self.max_pool_2x2(h_conv3, "pooling1")
+            norm3 = tf.nn.lrn(pool3, depth_radius=4, bias=1.0, alpha=0.001 / 9.0, beta=0.75, name="norm1")
+
         # 全连接层
         with tf.variable_scope('local3') as scope:
-            reshape = tf.reshape(norm2, shape=[-1, 64*6*1])
-            w_fc1 = tf.Variable(self.weight_variable([64*6*1, 128], 0.005), name="weights", dtype=tf.float32)
+            reshape = tf.reshape(norm3, shape=[-1, 128*2*6])
+            w_fc1 = tf.Variable(self.weight_variable([128*2*6, 128], 0.005), name="weights", dtype=tf.float32)
             b_fc1 = tf.Variable(self.bias_variable([128]), name="blases", dtype=tf.float32)
             h_fc1 = tf.nn.relu(tf.matmul(reshape, w_fc1) + b_fc1, name=scope.name)
 
@@ -89,3 +100,4 @@ class CNN(object):
         self.loss = self.losses(train_logits, self.y_)
         self.train_op = self.trainning(self.loss, 0.0001)
         self.acc = self.evaluation(train_logits, self.y_)
+        self.merged_summary = tf.summary.merge_all()

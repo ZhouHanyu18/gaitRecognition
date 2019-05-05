@@ -1,7 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="37925c9a-9a7c-4f8b-92fc-c98b5b8aba62" name="Default Changelist" comment="" />
+    <list default="true" id="37925c9a-9a7c-4f8b-92fc-c98b5b8aba62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.py" beforeDir="false" afterPath="$PROJECT_DIR$/1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNN.py" beforeDir="false" afterPath="$PROJECT_DIR$/CNN.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-520.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-520.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-520.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-540.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-540.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-540.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-630.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-630.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-630.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-640.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-640.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-640.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-880.data-00000-of-00001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-880.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/-880.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/checkpoint" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/events.out.tfevents.1556794186.ZHY" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/graph.pbtxt" beforeDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +41,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
+            <state relative-caret-position="2060">
+              <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
-                <element signature="e#3439#3481#0" />
               </folding>
             </state>
           </provider>
@@ -32,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+            <state relative-caret-position="1660">
+              <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
               </folding>
@@ -44,7 +65,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/signal/filter_design.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
+            <state relative-caret-position="49460">
               <caret line="2490" column="7" selection-start-line="2490" selection-start-column="7" selection-end-line="2490" selection-end-column="7" />
             </state>
           </provider>
@@ -53,7 +74,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
+            <state relative-caret-position="58700">
               <caret line="2965" column="6" selection-start-line="2965" selection-start-column="6" selection-end-line="2965" selection-end-column="6" />
             </state>
           </provider>
@@ -62,8 +83,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PCA_KNN.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="329">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="140">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -74,7 +95,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/signal/signaltools.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="59300">
               <caret line="2991" column="57" selection-start-line="2991" selection-start-column="57" selection-end-line="2991" selection-end-column="57" />
             </state>
           </provider>
@@ -83,8 +104,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SVM.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="6" column="23" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="23" />
+            <state relative-caret-position="160">
+              <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -122,6 +143,9 @@
       <find>fully_connected</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -133,17 +157,21 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="166" />
-    <option name="y" value="13" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1371" />
+    <option name="y" value="-19" />
     <option name="width" value="1038" />
     <option name="height" value="628" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,7 +183,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -219,12 +246,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556180386468</updated>
       <workItem from="1556180388715" duration="7530000" />
-      <workItem from="1556414836413" duration="148780000" />
+      <workItem from="1556414836413" duration="166856000" />
+      <workItem from="1557057284338" duration="9368000" />
+      <workItem from="1557067135918" duration="237000" />
+      <workItem from="1557067542919" duration="128000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="156310000" />
+    <option name="totallyTimeSpent" value="184119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -236,17 +266,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="13" width="1038" height="628" extended-state="0" />
+    <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5039788" side_tool="true" weight="0.18835099" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4960212" visible="true" weight="0.25460124" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4960212" visible="true" weight="0.18696275" />
       <window_info id="Structure" order="2" sideWeight="0.50094515" side_tool="true" weight="0.11031519" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Database Changes" order="2" />
       <window_info anchor="bottom" id="Terminal" order="3" sideWeight="0.49713466" weight="0.3270869" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.5078797" side_tool="true" weight="0.30737135" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="5" sideWeight="0.49212036" visible="true" weight="0.6539278" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="5" sideWeight="0.49212036" visible="true" weight="0.35376045" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Thumbnails" order="8" sideWeight="0.495702" weight="0.32823366" />
@@ -257,7 +288,7 @@
       <window_info anchor="bottom" id="TODO" order="13" sideWeight="0.49641833" weight="0.32879046" />
       <window_info anchor="right" id="R Graphics" order="0" />
       <window_info anchor="right" id="R Packages" order="1" />
-      <window_info anchor="right" id="SciView" order="2" visible="true" weight="0.1196319" />
+      <window_info anchor="right" id="SciView" order="2" visible="true" weight="0.08381089" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="4" weight="0.25" />
       <window_info anchor="right" id="Database" order="5" />
@@ -272,7 +303,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/1.py</url>
-          <line>104</line>
+          <line>110</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
@@ -378,34 +409,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SVM.py">
+    <entry file="file://$PROJECT_DIR$/1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PCA_KNN.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="2060">
+          <caret line="134" lean-forward="true" selection-start-line="134" selection-end-line="134" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="2965" column="6" selection-start-line="2965" selection-start-column="6" selection-end-line="2965" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CNN.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+        <state relative-caret-position="1660">
+          <caret line="84" column="14" selection-start-line="84" selection-start-column="14" selection-end-line="84" selection-end-column="14" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
           </folding>
@@ -414,26 +431,39 @@
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/signal/filter_design.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
+        <state relative-caret-position="49460">
           <caret line="2490" column="7" selection-start-line="2490" selection-start-column="7" selection-end-line="2490" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/tensorflow/python/ops/nn_ops.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58700">
+          <caret line="2965" column="6" selection-start-line="2965" selection-start-column="6" selection-end-line="2965" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PCA_KNN.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/scipy/signal/signaltools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="59300">
           <caret line="2991" column="57" selection-start-line="2991" selection-start-column="57" selection-end-line="2991" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/1.py">
+    <entry file="file://$PROJECT_DIR$/SVM.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="17" column="81" lean-forward="true" selection-start-line="17" selection-start-column="81" selection-end-line="17" selection-end-column="81" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-            <element signature="e#3439#3481#0" />
-          </folding>
+        <state relative-caret-position="160">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
         </state>
       </provider>
     </entry>
